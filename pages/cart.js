@@ -25,10 +25,10 @@ const Cart = () => {
     <div className="" ref={cartRef}>
       <div className="flex flex-col items-center  justify-center">
         <button
-          type="butoon"
-          className="flex text-center text-xl items-center font-bold"
+        
+          className="flex pt-4 text-center text-xl items-center font-bold"
         >
-          <span className="">Your Cart</span>
+          <span className="">Your Cart:</span>
           <span className="">{totalQuantities} items</span>
         </button>
         {cartItems.length < 1 ? (
@@ -47,7 +47,7 @@ const Cart = () => {
         ) : (
           <div className="flex flex-col items-center justify-center">
             {cartItems.map((item) => (
-              <div className="flex p-5  mt-20 space-x-6" key={item._id}>
+              <div className="block md:flex p-5  mt-20 space-x-6" key={item._id}>
                 <img
                   className="w-[180px] h-[150px] bg-gray-500"
                   src={urlFor(item?.image[0])}
@@ -55,7 +55,7 @@ const Cart = () => {
                 <div className="space-y-10">
                   <div className="flex space-x-10 items-center justify-center">
                     <h5 className="font-medium text-2xl">{item.name}</h5>
-                    <h4 className="font-medium text-2xl">${item.price}</h4>
+                    <h4 className="font-medium text-2xl">Ksh{item.price}</h4>
                   </div>
                   <div className="flex spaxe-x-10 justify-between">
                     <p className="flex space-x-3 justify-center   ">
@@ -93,7 +93,7 @@ const Cart = () => {
         <div className="absolute bottom-4 w-full  justify-center items-center flex- flex-col">
           <div className="flex text-2xl font-bold justify-around">
             <h3>Subtotal:</h3>
-            <h3>$ {totalPrice}</h3>
+            <h3>Ksh {totalPrice}</h3>
           </div>
           <div className="flex  items-center justify-center">
             <button

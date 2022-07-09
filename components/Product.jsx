@@ -4,7 +4,7 @@ import { urlFor } from "../lib/client";
 
 const Product = ({ product: { image, name, slug, price } }) => {
   return (
-    <div className="">
+    <div className="border p-4 flex flex-col justify-center items-center text-center">
       {" "}
       <Link href={`/product/${slug.current}`}>
         <div className=" cursor-pointer hover:scale-105  duration-300  text-[#324d67]">
@@ -15,8 +15,8 @@ const Product = ({ product: { image, name, slug, price } }) => {
             className=""
             alt=""
           />
-          <p className="">{name}</p>
-          <p className="">Ksh{price}</p>
+          <p className="font-medium text-xl">{name}</p>
+          <p className="font-bold text-green-600">Ksh{price}</p>
         </div>
       </Link>
     </div>

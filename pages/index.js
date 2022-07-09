@@ -1,7 +1,13 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import { Product, FooterBanner, HeroBanner, Footer, Navbar } from "../components";
+import {
+  Product,
+  FooterBanner,
+  HeroBanner,
+  Footer,
+  Navbar,
+} from "../components";
 import { client } from "../lib/client";
 
 export default function Home({ products, bannerData }) {
@@ -21,7 +27,7 @@ export default function Home({ products, bannerData }) {
           </h2>
           <p>Fruits Of many Variations</p>
         </div>
-        <div className="flex flex-wrap justify-center space-x-3 top-4 w-full">
+        <div className="flex flex-wrap justify-center space-y-4 space-x-4 top-4 w-full">
           {products?.map((product) => (
             <Product key={product._id} product={product} />
           ))}
