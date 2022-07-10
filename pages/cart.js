@@ -52,7 +52,7 @@ const Cart = () => {
                   className="w-[180px] h-[150px] bg-gray-500"
                   src={urlFor(item?.image[0])}
                 />
-                <div className="space-y-10">
+                <div className="">
                   <div className="flex space-x-10 items-center justify-center">
                     <h5 className="font-medium text-2xl">{item.name}</h5>
                     <h4 className="font-medium text-2xl">Ksh{item.price}</h4>
