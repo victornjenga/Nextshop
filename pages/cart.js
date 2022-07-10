@@ -90,15 +90,15 @@ const Cart = () => {
         )}
       </div>
       {cartItems.length >= 1 && (
-        <div className="absolute bottom-4 w-full  justify-center items-center flex- flex-col">
+        <div className="pt-10 bottom-4 w-full  justify-center items-center flex- flex-col">
           <div className="flex text-2xl font-bold justify-around">
             <h3>Subtotal:</h3>
             <h3>Ksh {totalPrice}</h3>
           </div>
-          <div className="flex  items-center justify-center">
+          <div className="flex pt-6 items-center justify-center">
             <button
               type="button"
-              className="bg-green-500 text-white px-3 py-2 rounded-xl text-2xl font-bold hover:scale-105 duration-300 "
+              className="bg-green-500 text-white px-3  py-2 rounded-xl text-2xl font-bold hover:scale-105 duration-300 "
               onClick=""
             >
               Proceed to Checkout
