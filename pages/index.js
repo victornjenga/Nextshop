@@ -21,7 +21,7 @@ export default function Home({ products, bannerData }) {
 
       <main>
         <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
-        <div className="text-center ">
+        <div className="text-center pt-20">
           <h2 className="text-black/60 font-bold text-4xl">
             Best Selling Products
           </h2>

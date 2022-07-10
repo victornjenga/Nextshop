@@ -104,7 +104,7 @@ span.text-red {
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
-  margin-top: 20px;
+  margin-top: 40px;
   width: 100%;
 }
 .product-card {
@@ -134,16 +134,18 @@ span.text-red {
 
 .hero-banner-container {
   padding: 100px 40px;
-  margin: 0;
+  background-color: white;
   border-radius: 15px;
   position: relative;
   height: 500px;
   line-height: 0.9;
   width: 100%;
+  top: 70px;
 }
 .hero-banner-container .beats-solo {
   font-size: 20px;
 }
+
 .hero-banner-container button {
   border-radius: 15px;
   padding: 10px 16px;
@@ -158,13 +160,12 @@ span.text-red {
 }
 
 .hero-banner-container h3 {
- 
+  font-size: 4rem;
   margin-top: 4px;
-  
 }
 .hero-banner-container h1 {
-  
-  
+  color: white;
+  font-size: 10em;
   margin-left: -20px;
   text-transform: uppercase;
 }
